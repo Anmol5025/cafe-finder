@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Finder</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>☕ Café Finder</h1>
+        <div class="search-container">
+          <input
+            type="text"
+            id="locationInput"
+            placeholder="Enter location or use current location"
+          />
+          <button id="searchBtn">Search</button>
+          <button id="currentLocationBtn">📍 Use Current Location</button>
+        </div>
+      </header>
+
+      <main>
+        <div class="content-wrapper">
+          <div id="map"></div>
+          <div class="sidebar">
+            <div class="filters">
+              <h3>Filters</h3>
+              <label>
+                <input
+                  type="range"
+                  id="radiusSlider"
+                  min="500"
+                  max="5000"
+                  value="1000"
+                  step="100"
+                />
+                <span>Radius: <span id="radiusValue">1000</span>m</span>
+              </label>
+            </div>
+            <div class="cafe-list">
+              <h3>Nearby Cafés</h3>
+              <div id="cafeResults">
+                <p class="no-results">
+                  Search for a location to find nearby cafés
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
