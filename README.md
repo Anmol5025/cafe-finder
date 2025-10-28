@@ -2,24 +2,24 @@
 
 A modern, full-stack web application built with Next.js to help users discover nearby cafés with advanced features including real-time location detection, interactive maps, and comprehensive café information.
 
-## 🚀 Features
+## Features
 
 ### Core Functionality
-- **🎯 Real-Time Location Detection**: Automatically identifies user location with permission
-- **🔍 Nearby Café Search**: Finds cafés within customizable radius (500m - 5km)
-- **🗺️ Interactive Map Interface**: Displays cafés as markers with smooth navigation
-- **💬 Info Windows**: Detailed café information on marker clicks
-- **📱 Responsive Design**: Seamless experience on desktop and mobile
+- ** Real-Time Location Detection**: Automatically identifies user location with permission
+- ** Nearby Café Search**: Finds cafés within customizable radius (500m - 5km)
+- ** Interactive Map Interface**: Displays cafés as markers with smooth navigation
+- ** Info Windows**: Detailed café information on marker clicks
+- ** Responsive Design**: Seamless experience on desktop and mobile
 
 ### Advanced Features
-- **🎛️ Smart Filtering**: Sort by distance or rating, filter by minimum rating
-- **📍 Dual Location Input**: Search by address or use GPS detection
-- **🔄 Real-time Updates**: Dynamic search radius adjustment
-- **📞 Direct Actions**: Call cafés, get directions, visit websites
-- **⭐ Rich Data**: Ratings, reviews, opening hours, price levels
-- **🎨 Modern UI**: Beautiful design with Tailwind CSS and custom animations
+- **Smart Filtering**: Sort by distance or rating, filter by minimum rating
+- **Dual Location Input**: Search by address or use GPS detection
+- ** Real-time Updates**: Dynamic search radius adjustment
+- ** Direct Actions**: Call cafés, get directions, visit websites
+- ** Rich Data**: Ratings, reviews, opening hours, price levels
+- ** Modern UI**: Beautiful design with Tailwind CSS and custom animations
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Frontend
 - **Next.js 14** - React framework with App Router
@@ -42,7 +42,7 @@ A modern, full-stack web application built with Next.js to help users discover n
   - Nominatim for geocoding
   - Overpass API for café data
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - Node.js 18+ 
@@ -92,9 +92,9 @@ yarn dev
 
 Visit `http://localhost:3000`
 
-## 🏗️ Project Structure
+## Project Structure
 
-```
+
 cafe-finder-nextjs/
 ├── app/
 │   ├── api/                    # Backend API routes
@@ -115,9 +115,9 @@ cafe-finder-nextjs/
 ├── tailwind.config.js
 ├── tsconfig.json
 └── next.config.js
-```
 
-## 🎯 How It Works
+
+##  How It Works
 
 ### 1. Location Detection
 - **Manual Search**: Enter city, address, or landmark
@@ -135,7 +135,7 @@ cafe-finder-nextjs/
 - **Actions**: Get directions, call cafés, visit websites
 - **Real-time Updates**: Instant results when changing search parameters
 
-## 🔧 Configuration Options
+## Configuration Options
 
 ### API Fallback System
 The app gracefully falls back to free APIs if Google APIs aren't configured:
@@ -147,7 +147,7 @@ The app gracefully falls back to free APIs if Google APIs aren't configured:
 - Adjust map styling in `components/MapComponent.tsx`
 - Customize UI colors in `tailwind.config.js`
 
-## 🚀 Deployment
+## Deployment
 
 ### Vercel (Recommended)
 ```bash
@@ -161,15 +161,7 @@ npm run build
 npm start
 ```
 
-## 🔑 Environment Variables
-
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `GOOGLE_MAPS_API_KEY` | Optional | Google Maps JavaScript API key |
-| `GOOGLE_PLACES_API_KEY` | Optional | Google Places API key |
-| `NEXT_PUBLIC_APP_URL` | Optional | Application URL for production |
-
-## 🌟 Key Features Explained
+## Key Features Explained
 
 ### Real-Time Location Detection
 - Automatic GPS detection with user permission
@@ -192,7 +184,7 @@ npm start
 - Touch-friendly interface
 - Optimized for all screen sizes
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - **Favorites System**: Save preferred cafés
 - **Route Planning**: Multi-stop café tours  
@@ -202,20 +194,3 @@ npm start
 - **User Reviews**: Community-driven ratings
 - **Push Notifications**: New cafés in area
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🆘 Support
-
-- Check the [Issues](https://github.com/your-repo/issues) page
-- Review API documentation for Google Maps Platform
-- Ensure proper API key configuration and permissions
